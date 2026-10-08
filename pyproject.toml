@@ -1,0 +1,9 @@
+[project]
+name = "k5-ocean-probes"
+version = "0.1.0"
+description = "Ice-ocean interface probes: double-diffusive layering in the cavity"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

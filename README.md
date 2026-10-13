@@ -71,7 +71,7 @@ Closely related ocean-facing work that runs on *ice-sheet* geometry — the §G.
 python3 -m venv .venv && . .venv/bin/activate
 pip install -r requirements.txt
 python run_candidate2.py
-python -m pytest            # 24 tests
+python -m pytest            # 24 passed
 ```
 
 ## Provenance

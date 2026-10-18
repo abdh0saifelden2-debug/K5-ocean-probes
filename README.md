@@ -88,7 +88,8 @@ Split out of the **K** monorepo, partitioned by claim cluster:
 
 The pristine monorepo was snapshotted **before** any edit:
 `K-monorepo-archive.tar.gz`, SHA-256
-`3c30c68b4d4287787af00539b2cbe75a47dc0536491ec0d1b17a0f61d80b5304`
+`ef637ff55f912a5d1404f677429f9429eccc8102a8cab23cee79cf055bbf1220`
 (`K-monorepo-archive.sha256`). The cross-repo claim ledger (`FUTURE_WORK.md`)
 and paper outline are deliberately **not** copied here — they live only in that
-archive. `AUDIT.md` records the AST dependency audit that decided this split.
+archive. `AUDIT.md` records the AST dependency audit that decided this split
+(reproduce it with [`K-audit` v1.0](https://github.com/abdh0saifelden2-debug/K-audit/tree/v1.0)).

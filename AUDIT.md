@@ -1,6 +1,6 @@
 # Split audit — K5-ocean-probes
 
-How this repository was carved out of the pristine **K** monorepo. Regenerate the classification with `python3 K-audit/classify.py K5-ocean-probes` and re-check the import graph with `python3 K-audit/verify_repo.py K5-ocean-probes`.
+How this repository was carved out of the pristine **K** monorepo. Regenerate the classification with [`K-audit` v1.0](https://github.com/abdh0saifelden2-debug/K-audit/tree/v1.0) — `python3 classify.py --mono K K5-ocean-probes` — and re-check the import graph with `python3 verify_repo.py --mono K K5-ocean-probes` (both run from a clone of `K-audit` against a clone of the monorepo).
 
 ## Claim cluster
 
@@ -62,7 +62,7 @@ Copied byte-for-byte from the monorepo paths below (this is what makes the repo 
 
 ## Verification
 
-`K-audit/verify_repo.py` walks the **AST import graph** of every Python file in this repo, expands each unqualified import against every `sys.path` root the file would actually see, and reports any import that resolves only outside the repository. Result:
+[`K-audit`](https://github.com/abdh0saifelden2-debug/K-audit/tree/v1.0) `verify_repo.py` walks the **AST import graph** of every Python file in this repo, expands each unqualified import against every `sys.path` root the file would actually see, and reports any import that resolves only outside the repository. Result:
 
 ```
 OK K5-ocean-probes: no external edges
@@ -70,4 +70,4 @@ OK K5-ocean-probes: no external edges
 
 ## Provenance
 
-Pristine snapshot taken **before** any edit: `K-monorepo-archive.tar.gz` (SHA-256 `3c30c68b4d4287787af00539b2cbe75a47dc0536491ec0d1b17a0f61d80b5304`). `FUTURE_WORK.md` / `PAPER_OUTLINE.md` were deliberately left in the archive.
+Pristine snapshot taken **before** any edit: `K-monorepo-archive.tar.gz` (SHA-256 `ef637ff55f912a5d1404f677429f9429eccc8102a8cab23cee79cf055bbf1220`). `FUTURE_WORK.md` / `PAPER_OUTLINE.md` were deliberately left in the archive.

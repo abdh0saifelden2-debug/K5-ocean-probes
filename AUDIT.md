@@ -47,7 +47,6 @@ Copied byte-for-byte from the monorepo paths below (this is what makes the repo 
 
 ## Edits
 
-- `README.md` — rewritten for standalone use (see below).
 - `README.md` — rewritten to stand alone: no `../` links into sibling monorepo folders, run commands given from the repo root, and a Provenance section pointing at the archive.
 - `pyproject.toml` — rewritten for this repo: `testpaths`/`pythonpath` scoped to this repo instead of all five monorepo domains, and the dependency list trimmed to the libraries this claim cluster imports.
 - `requirements.txt` — rewritten for this repo: `testpaths`/`pythonpath` scoped to this repo instead of all five monorepo domains, and the dependency list trimmed to the libraries this claim cluster imports.
@@ -58,7 +57,7 @@ Copied byte-for-byte from the monorepo paths below (this is what makes the repo 
 
 ## Test-suite accounting
 
-`tests/` carries **2 test files** (ocean/tests (2)); the whole monorepo has 136 test files across the five repos (78+36+15+2+2 = 133, plus the 3 excluded in K1).
+`tests/` carries **2 test files** (ocean/tests (2)); the whole monorepo has 136 test files across the five repos (78+39+15+2+2 = 136; the NR33–NR35 modules relocated from K1 now count under K2).
 
 ## Verification
 
